@@ -3,10 +3,25 @@
  * jeweilige Grundrechenart auf die beiden übergebenen Parameter A und B
  * anwendet. Verwende Arrow-Funktionen.
  */
-// export const ...
-// ...
-// ...
-// ...
+export const add = (a, b) => {
+    return a + b;
+}
+console.log(add(1, 7));
+
+export const substract = (a, b) => {
+    return a - b;
+}
+console.log(subt(60, 18));
+
+export const multiply = (a, b) => {
+    return a * b;
+}
+console.log(multi(7, 5));
+
+export const divide = (a, b) => {
+    return a / b;
+}
+console.log(divi(8, 2));
 
 // Kontrollfluss
 
@@ -24,9 +39,25 @@
  * @returns 
  */
 export function umsatzsteuer (umsatz, steuerjahr = 2024) {
-    
-    // ...
+    if (steuerjahr >= 2020) {
+        if (umsatz < 22000) {
+            return 0;
+        }
+        else {
+            return umsatz / 100 * 19;
+        }
+    }
+    if (steuerjahr >= 2003 && steuerjahr < 2020) {
+        if (umsatz < 17500) {
+            return 0;
+        }
+        else {
+            return umsatz / 100 * 19;
+        }
+    }
+
 }
+console.log(umsatzsteuer(17400, 2018));
 
 // switch
 
@@ -45,7 +76,19 @@ export function umsatzsteuer (umsatz, steuerjahr = 2024) {
  */
 export const area = (shape, params) => {
     
-    // ...
+    switch (shape) {
+        
+        case "circle": 
+
+            return Math.PI * params.radius**2;
+  
+        case "triangle":
+            return params.base * (params.height / 2);
+
+        case "rectangle":
+            return params.base * params.height;
+    }
+
 }
 
 // loops
@@ -61,7 +104,7 @@ export const area = (shape, params) => {
  */
 export function deckOfCards () {
     
-    // ...
+    
 }
 
 /**
