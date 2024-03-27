@@ -23,9 +23,58 @@ export const divide = (a, b) => {
 }
 console.log(divi(8, 2));
 
+/**
+ * Schreibe eine Funktion, die eine Temeratur in Celsius in eine Temperatur in
+ * Fahrenheit umrechnet.
+ * 
+ * @param {*} celsius 
+ */
+export function inFahrenheit (celsius) {
+
+    // ...
+}
+
+/**
+ * Schreibe eine Funktion, die eine Temeratur in Fahrenheit in eine Temperatur
+ * in Celsius umrechnet.
+ * 
+ * @param {*} celsius 
+ */
+export const inCelsius = (fahrenheit) => {
+
+    // ...
+}
+
+/**
+ * Schreibe eine Funktion, die prüft, ob eine Zahl gerade ist.
+ */
+export const isEven = () => undefined // TODO
+
+/**
+ * Schreibe eine Funktion, die prüft, ob eine Zahl ungerade ist.
+ */
+export const isOdd = () => undefined // TODO
+
 // Kontrollfluss
 
 // if
+
+/**
+ * Schreibe eine Funkntion, die abhängig von dem als Zahl eingegebenen Monat die
+ * passende Jahreszeit zurückgibt. Und zwar
+ * 
+ * "Frühling" für die Monate März, April, Mai
+ * "Sommer" für die Monate Juni, Juli, August
+ * "Herbst" für die Monate September, Oktober, November und
+ * "Winter" für die Monate Dezember, Januar und Februar.
+ *
+ * @param {int} monat 
+ * @returns {string} Jahreszeit
+ */
+export function jahreszeit (monat) {
+
+    // ...
+}
 
 /**
  * Schreibe eine Funktion, die die Umsatzsteuer anhand des Umsatzes und des
