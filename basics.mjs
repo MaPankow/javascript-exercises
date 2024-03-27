@@ -11,17 +11,17 @@ console.log(add(1, 7));
 export const substract = (a, b) => {
     return a - b;
 }
-console.log(subt(60, 18));
+console.log(substract(60, 18));
 
 export const multiply = (a, b) => {
     return a * b;
 }
-console.log(multi(7, 5));
+console.log(multiply(7, 5));
 
 export const divide = (a, b) => {
     return a / b;
 }
-console.log(divi(8, 2));
+console.log(divide(8, 2));
 
 /**
  * Schreibe eine Funktion, die eine Temeratur in Celsius in eine Temperatur in
@@ -85,7 +85,7 @@ export function jahreszeit (monat) {
  * 
  * @param {*} umsatz 
  * @param {*} steuerjahr 
- * @returns 
+ * @returns Umsatzsteuer
  */
 export function umsatzsteuer (umsatz, steuerjahr = 2024) {
     if (steuerjahr >= 2020) {
@@ -121,7 +121,7 @@ console.log(umsatzsteuer(17400, 2018));
  * 
  * @param {*} shape 
  * @param {*} params 
- * @returns 
+ * @returns Flächeninhalt der Figuren
  */
 export const area = (shape, params) => {
     
@@ -152,21 +152,44 @@ export const area = (shape, params) => {
  * @returns 
  */
 export function deckOfCards () {
-    
-    
-}
+    const farben = ["Clubs", "Spades", "Hearts", "Diamonds"];
+    const werte = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "K", "Q", "A"]
+    const cards = []
+
+    for (let index in farben) {
+        //console.log(farben[index])
+         for(let index2 in werte) {
+            //console.log(werte[index2]);
+            cards.push([farben[index], werte[index2]])
+         }
+        }
+        return cards;
+        }
+     console.log(deckOfCards());
+     
+
 
 /**
  * Schreibe eine Funktion, die die ersten N Antworten für das FizzBuzz-Spiel
  * erzeugt und auf der Konsole ausgibt.
  * 
- * @param {*} n 
+ * @param {*} i 
  * @see https://de.wikipedia.org/wiki/Fizz_buzz
  */
-export function fizzbuzz (n) {
+
+
+export const fizzBuzz = (n) => {
+        for (let i = 1; i <= n; i++) {
     
-    // ...
-}
+            if (i % 15 == 0) {console.log('fizzbuzz')}
+            else if (i % 3 == 0) {console.log('fizz')}
+            else if (i % 5 == 0) {console.log('buzz')}
+            else {console.log(i)}
+
+        }
+        
+    }    
+  fizzBuzz(70)
 
 // recursion
 
